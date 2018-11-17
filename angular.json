@@ -23,9 +23,22 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              {
+                "input": "src/styles.styl",
+                "lazy": true
+              }
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/global/js/modernizr-2.7.1-csstransforms3d-canvas-touch.js",
+              "src/global/js/megapix-image.js",
+              "src/global/js/three.min.js",
+              "src/global/js/Detector.js",
+              "src/global/js/CSS3DRenderer.js",
+              "src/global/js/theta-viewer.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -72,7 +85,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.stylus"
             ],
             "scripts": [],
             "assets": [
@@ -123,5 +136,10 @@
       }
     }
   },
-  "defaultProject": "three-viewer"
+  "defaultProject": "three-viewer",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "stylus"
+    }
+  }
 }
