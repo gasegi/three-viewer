@@ -26,7 +26,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.css",
               {
                 "input": "src/styles.styl",
-                "lazy": true
+                "lazy": false
               }
             ],
             "scripts": [

@@ -1,0 +1,10 @@
+.active {
+  color: #FFFFFF;
+}
+
+header.bg-dark ,
+.navbar-nav ,
+a.nav-link {
+  color: #dcdcdc;
+}
+
