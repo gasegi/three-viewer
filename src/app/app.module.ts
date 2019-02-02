@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { TopComponent } from './view/top/top.component';
 import { HeaderComponent } from './view/header/header.component';
 import { NewComponent } from './view/new/new.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NewComponent } from './view/new/new.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

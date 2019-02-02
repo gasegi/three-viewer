@@ -11,9 +11,20 @@ import { TopComponent } from './view/top/top.component';
       // },
       {
         path: '',
-        component: TopComponent
+        component: TopComponent,
+        data: { file: 'photo1.png' },
       },
-    ])
+      {
+        path: 'photo1',
+        component: TopComponent,
+        data: { file: 'photo1.png' },
+      },
+      {
+        path: 'photo2',
+        component: TopComponent,
+        data: { file: 'photo2.png' },
+      },
+    ], { useHash: true })
   ],
   exports: [RouterModule]
 })

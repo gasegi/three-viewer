@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:public-190202": "npm run build -- --prod=true --baseHref /three-viewer-public-190202/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
